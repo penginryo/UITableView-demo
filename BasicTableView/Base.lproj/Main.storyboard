@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BIE-E4-M3A">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Provinces of Canada-->
+        <scene sceneID="XD0-lC-ici">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvK-xH-bzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="WK4-u7-h0T" customClass="ListTableViewController" customModule="BasicTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jwC-FI-GyE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="40" reuseIdentifier="DataTableViewCell" rowHeight="50" id="5xX-lz-aN0" customClass="DataTableViewCell" customModule="BasicTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5xX-lz-aN0" id="MQF-24-R3L">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-tp-F0n">
+                                            <rect key="frame" x="20" y="0.0" width="559" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="nameLabel" destination="LeZ-tp-F0n" id="Gfh-8E-jtl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WK4-u7-h0T" id="AtJ-hy-LKn"/>
+                            <outlet property="delegate" destination="WK4-u7-h0T" id="KzP-Ei-Pql"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Provinces of Canada" id="00X-GF-opr"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1485" y="493"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YtR-7d-hSk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMu-wn-DIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BIE-E4-M3A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B4m-00-WYX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WK4-u7-h0T" kind="relationship" relationship="rootViewController" id="GF6-4i-oTO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="673" y="493"/>
+        </scene>
+    </scenes>
+</document>
