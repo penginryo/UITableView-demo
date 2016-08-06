@@ -18,6 +18,7 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
 		
 		navigationItem.leftBarButtonItem = editButtonItem()
+		navigationItem.leftBarButtonItem?.tintColor = UIColor.whiteColor()
 
 		loadInitialData()
     }
@@ -97,14 +98,18 @@ class ListTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let dataDetailViewController = segue.destinationViewController as! DetailViewController
+		if let selectedDataCell = sender as? DataTableViewCell {
+			let indexPath = tableView.indexPathForCell(selectedDataCell)!
+			let selectedData = data[indexPath.row]
+			dataDetailViewController.data = selectedData
+			
+		}
     }
-    */
+
 
 }

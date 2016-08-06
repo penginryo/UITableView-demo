@@ -15,6 +15,7 @@
 		A83472511D544DD300C2A01A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83472501D544DD300C2A01A /* ListTableViewController.swift */; };
 		A83472531D544EA700C2A01A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83472521D544EA700C2A01A /* Data.swift */; };
 		A83472551D5450B200C2A01A /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83472541D5450B200C2A01A /* DataTableViewCell.swift */; };
+		A84ECFF21D5591F7000BA96A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84ECFF11D5591F7000BA96A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A83472501D544DD300C2A01A /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		A83472521D544EA700C2A01A /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		A83472541D5450B200C2A01A /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		A84ECFF11D5591F7000BA96A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A834723E1D54498B00C2A01A /* AppDelegate.swift */,
 				A83472401D54498B00C2A01A /* ViewController.swift */,
 				A83472421D54498B00C2A01A /* Main.storyboard */,
+				A84ECFF11D5591F7000BA96A /* DetailViewController.swift */,
 				A83472541D5450B200C2A01A /* DataTableViewCell.swift */,
 				A83472501D544DD300C2A01A /* ListTableViewController.swift */,
 				A83472521D544EA700C2A01A /* Data.swift */,
@@ -147,6 +150,7 @@
 				A83472511D544DD300C2A01A /* ListTableViewController.swift in Sources */,
 				A83472411D54498B00C2A01A /* ViewController.swift in Sources */,
 				A83472551D5450B200C2A01A /* DataTableViewCell.swift in Sources */,
+				A84ECFF21D5591F7000BA96A /* DetailViewController.swift in Sources */,
 				A834723F1D54498B00C2A01A /* AppDelegate.swift in Sources */,
 				A83472531D544EA700C2A01A /* Data.swift in Sources */,
 			);
@@ -298,6 +302,7 @@
 				A834724F1D54498B00C2A01A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
